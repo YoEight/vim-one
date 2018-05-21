@@ -565,20 +565,27 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   " }}}
 
   " Haskell highlighting ----------------------------------------------------{{{
-  call <sid>X('haskellDeclKeyword',    s:hue_2, '', '')
-  call <sid>X('haskellType',           s:hue_4, '', '')
-  call <sid>X('haskellWhere',          s:hue_5, '', '')
-  call <sid>X('haskellImportKeywords', s:hue_2, '', '')
-  call <sid>X('haskellOperators',      s:hue_5, '', '')
-  call <sid>X('haskellDelimiter',      s:hue_2, '', '')
-  call <sid>X('haskellIdentifier',     s:hue_6, '', '')
-  call <sid>X('haskellKeyword',        s:hue_5, '', '')
-  call <sid>X('haskellNumber',         s:hue_1, '', '')
-  call <sid>X('haskellString',         s:hue_1, '', '')
+  call <sid>X('haskellDeclKeyword',    s:hue_2,   '', 'italic')
+  call <sid>X('haskellType',           s:hue_4,   '', '')
+  call <sid>X('haskellWhere',          s:hue_5,   '', 'italic')
+  call <sid>X('haskellImportKeywords', s:hue_2,   '', 'italic')
+  call <sid>X('haskellOperators',      s:hue_5,   '', '')
+  call <sid>X('haskellDelimiter',      s:hue_2,   '', '')
+  call <sid>X('haskellIdentifier',     s:hue_6,   '', '')
+  call <sid>X('haskellKeyword',        s:hue_5,   '', '')
+  call <sid>X('haskellNumber',         s:hue_1,   '', '')
+  call <sid>X('haskellString',         s:hue_1,   '', '')
+  call <sid>X('haskellDeriving',       s:hue_3,   '', 'italic')
+  call <sid>X('haskellLet',            s:hue_6_2, '', 'italic')
+  call <sid>X('haskellDecl',           s:hue_6_2, '', 'italic')
+  call <sid>X('haskellPragma',         s:mono_2,  '', 'italic')
+  call <sid>X('haskellConditional',    s:hue_3,   '', 'italic')
+  call <sid>X('haskellForall',         s:hue_2,   '', 'italic')
+  call <sid>X('haskellKeyword',        s:hue_5,   '', 'italic')
   "}}}
 
 
-  
+
   " HTML highlighting -------------------------------------------------------{{{
   call <sid>X('htmlArg',            s:hue_6,  '', '')
   call <sid>X('htmlTagName',        s:hue_5,  '', '')
@@ -791,16 +798,25 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   " }}}
 
   " Rust highlighting -------------------------------------------------------{{{
+
   call <sid>X('rustExternCrate',          s:hue_5,    '', 'bold')
   call <sid>X('rustIdentifier',           s:hue_2,    '', '')
   call <sid>X('rustDeriveTrait',          s:hue_4,    '', '')
   call <sid>X('SpecialComment',           s:mono_3,    '', '')
-  call <sid>X('rustCommentLine',          s:mono_3,    '', '')
-  call <sid>X('rustCommentLineDoc',       s:mono_3,    '', '')
-  call <sid>X('rustCommentLineDocError',  s:mono_3,    '', '')
-  call <sid>X('rustCommentBlock',         s:mono_3,    '', '')
-  call <sid>X('rustCommentBlockDoc',      s:mono_3,    '', '')
-  call <sid>X('rustCommentBlockDocError', s:mono_3,    '', '')
+  call <sid>X('rustCommentLine',          s:mono_3,    '', 'italic')
+  call <sid>X('rustCommentLineDoc',       s:mono_3,    '', 'italic')
+  call <sid>X('rustCommentLineDocError',  s:mono_3,    '', 'italic')
+  call <sid>X('rustCommentBlock',         s:mono_3,    '', 'italic')
+  call <sid>X('rustCommentBlockDoc',      s:mono_3,    '', 'italic')
+  call <sid>X('rustCommentBlockDocError', s:mono_3,    '', 'italic')
+  call <sid>X('rustConditional', s:hue_3,    '', 'italic')
+  call <sid>X('rustRepeat', s:hue_3,    '', 'italic')
+  call <sid>X('rustSelf', s:hue_4,    '', 'italic')
+  call <sid>X('rustKeyword', s:hue_5,    '', 'italic')
+  call <sid>X('rustMacro', s:hue_3,    '', 'italic')
+  call <sid>X('rustTypedef', s:hue_5,    '', 'italic')
+  call <sid>X('rustStructure', s:hue_5,    '', 'italic')
+
   " }}}
 
   " man highlighting --------------------------------------------------------{{{
