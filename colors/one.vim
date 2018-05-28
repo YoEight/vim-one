@@ -800,7 +800,9 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   " Rust highlighting -------------------------------------------------------{{{
 
   call <sid>X('rustExternCrate',          s:hue_5,    '', 'bold')
-  call <sid>X('rustIdentifier',           s:hue_2,    '', '')
+  call <sid>X('rustIdentifier',           s:hue_2,    '', 'bold')
+  call <sid>X('rustFuncCall',             s:hue_2,    '', 'bold')
+  call <sid>X('rustFuncName',             s:hue_2,    '', 'bold')
   call <sid>X('rustDeriveTrait',          s:hue_4,    '', '')
   call <sid>X('SpecialComment',           s:mono_3,    '', '')
   call <sid>X('rustCommentLine',          s:mono_3,    '', 'italic')
@@ -816,6 +818,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('rustMacro', s:hue_3,    '', 'italic')
   call <sid>X('rustTypedef', s:hue_5,    '', 'italic')
   call <sid>X('rustStructure', s:hue_5,    '', 'italic')
+  call <sid>X('rustUnsafeKeyword', s:hue_3,    '', 'italic')
 
   " }}}
 
